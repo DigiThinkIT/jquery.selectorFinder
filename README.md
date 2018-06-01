@@ -88,3 +88,17 @@ Result:
     "selector": <string selector>
 }, ...]
  ```
+
+# Development
+
+To setup your dev environment:
+
+```bash
+yarn install
+```
+
+To run tests:
+
+```bash
+yarn test
+```
