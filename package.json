@@ -5,6 +5,10 @@
   "main": "jquery.selectorFinder.js",
   "author": "forellana@digithinkit.com",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DigiThinkIT/jquery.selectorFinder.git"
+  },
   "scripts": {
     "test": "mocha"
   },
