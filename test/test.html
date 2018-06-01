@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Test Document</title>
+    </head>
+    <body>
+        <!-- TEST 1 Depth 0 - body > div:nth-of-type(1) -->
+        <div>
+            Test 1
+        </div>
+
+        <!-- TEST 2 Depth 2 - body > div:nth-of-type(2) > div -->
+        <div>
+            <div>Test 2</div>
+        </div>
+
+        <!-- TEST 3 Depth 0 multiple children - body > div:nth-of-type(3) -->
+        <div>Test 3</div>
+
+        <!-- TEST 4 - By Id -->
+        <div>
+            <div>
+                <ul>
+                    <li>
+                        <span id="test4">Test 4</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TEST 5 - Custom base elmenet first child - #test5 > div -->
+        <div id="test5">
+            <div>Test 5</div>
+        </div>
+
+        <!-- TEST 6 - Custom base element nth-of-type - #test6 > div:nth-of-type(3) -->
+        <div id="test6">
+            <div>1</div>
+            <div>2</div>
+            <div>Test 6</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+
+        <!-- TEST 7 - Custom base element by id - #test7 > #test7-inner -->
+        <div id="test7">
+            <div>
+                <div>
+                    <span id="test7-inner">Test 7</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEST 8 - Custom base element dumb depth test - #test7 > div > div > div > ul > li:nth-of-type(20) > a > div:nth-of-type(2) -->
+        <div id="test8">
+            <div>
+                <div>
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <a>
+                                    <div></div>
+                                    <div>Test 8</div>
+                                </a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="test9">Test 9</div>
+
+        <div class="test10">
+            <div class="inner">
+                Test 10
+            </div>
+        </div>
+
+        <div class="test10-2">
+            <div class="low-priority inner">
+                Test 10
+            </div>
+        </div>
+
+        <div class="test11">
+            <div class="ignore">
+                <div class="inner">
+                    Test 11
+                    <div class="deep">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="test12">
+            <div class="ignore ignore2 keep">
+                <div class="inner">
+                    Test 12
+                    <div class="deep">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="test13">
+            <div class="ignore2 keep">
+                <div class="inner">
+                    Wrong One
+                    <div class="deep">
+                    </div>
+                </div>
+            </div>
+            <div class="ignore ignore2 keep">
+                <div class="inner">
+                    Test 13
+                    <div class="deep">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="test14">
+            <div id="ignore-test14">
+                <div class="inner">
+                    Test 14
+                    <div class="deep">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

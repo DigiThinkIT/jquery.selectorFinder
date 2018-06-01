@@ -1,0 +1,16 @@
+{
+  "name": "jq-selector-finder",
+  "version": "1.0.0",
+  "description": "A jquery based css selector path search lib",
+  "main": "jquery.selectorFinder.js",
+  "author": "forellana@digithinkit.com",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "jsdom": "^11.11.0",
+    "mocha": "^5.2.0"
+  }
+}
